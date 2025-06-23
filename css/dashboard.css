@@ -1,0 +1,315 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--esut-green);
+    color: var(--white);
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.sidebar-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.sidebar-header h2 {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.user-profile {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info h3 {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.user-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    padding: 1rem 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+}
+
+.sidebar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+.sidebar-nav a i {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.sidebar-nav .active a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border-left: 4px solid var(--esut-yellow);
+}
+
+.election-status {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.active {
+    background-color: var(--success-color);
+    box-shadow: 0 0 10px var(--success-color);
+}
+
+.election-status p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.time-remaining {
+    font-weight: bold;
+    color: var(--esut-yellow);
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #f5f7fa;
+    overflow-y: auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main-header h1 {
+    color: var(--esut-green);
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.main-header p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.notifications {
+    position: relative;
+    margin-right: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--danger-color);
+    color: var(--white);
+    font-size: 0.6rem;
+    padding: 0.2rem 0.35rem;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.username {
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+
+.content-area {
+    padding: 1.5rem;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.voting-status .status-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.voting-status .status-item:last-child {
+    border-bottom: none;
+}
+
+.status-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.status-icon.completed {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.status-icon.pending {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning-color);
+}
+
+.status-icon.not-started {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: var(--secondary-color);
+}
+
+.status-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.status-info p {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--gray-light);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--gray-light);
+    border: 3px solid var(--white);
+}
+
+.timeline-item.completed .timeline-marker {
+    background-color: var(--success-color);
+}
+
+.timeline-item.current .timeline-marker {
+    background-color: var(--primary-color);
+}
+
+.timeline-item.upcoming .timeline-marker {
+    background-color: var(--secondary-color);
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content p {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.action-card {
+    display: flex;
+    background-color:

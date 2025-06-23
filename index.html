@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESUT SUG E-Voting Portal 2025
+
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <span>Welcome, <strong>2015030170557</strong></span>
+        <a href="#">Logout</a>
+    </div>
+    
+    <header>
+        <div class="logo-container">
+            <img src="./images/logo/esut.png" alt="ESUT Logo" class="logo">
+            <div class="header-text">
+                <h1>ENUGU STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+                <p>Students Union Government E-Voting Portal - 2025</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">SUG Elections</a></li>
+            <li><a href="#">Faculty Elections</a></li>
+            <li><a href="#">Departmental Elections</a></li>
+            <li><a href="#">Results</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-container">
+        <div class="dashboard">
+            <div class="sidebar">
+                <h3>Election Categories</h3>
+                <ul>
+                    <li><a href="#" class="active">All Positions</a></li>
+                    <li><a href="#">SUG Executive</a></li>
+                    <li><a href="#">SUG Senate</a></li>
+                    <li><a href="#">Faculty Positions</a></li>
+                    <li><a href="#">Departmental Positions</a></li>
+                    <li><a href="#">Voting History</a></li>
+                </ul>
+                
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h2 class="page-title">2025 SUG Elections - Voting Dashboard</h2>
+                
+                <p>Welcome to the ESUT SUG E-Voting Portal. Please select an election category below to view available positions and candidates.</p>
+                
+                <div class="election-categories">
+                    <div class="category-card">
+                        <div class="category-header">
+                            <h3>SUG Executive</h3>
+                        </div>
+                        <div class="category-body">
+                            <p>Vote for the Student Union Government Executive positions including President, Vice President, Secretary General, etc.</p>
+                            <a href="#sug-executive" class="btn">View Positions</a>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-header">
+                            <h3>SUG Senate</h3>
+                        </div>
+                        <div class="category-body">
+                            <p>Vote for your Faculty Senators who will represent your interests in the SUG Senate.</p>
+                            <a href="#sug-senate" class="btn">View Positions</a>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-header">
+                            <h3>Faculty Positions</h3>
+                        </div>
+                        <div class="category-body">
+                            <p>Vote for faculty-specific positions including Faculty Presidents and other executive roles.</p>
+                            <a href="#faculty-positions" class="btn">View Positions</a>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-header">
+                            <h3>Departmental Positions</h3>
+                        </div>
+                        <div class="category-body">
+                            <p>Vote for your departmental executives including Departmental Presidents and other roles.</p>
+                            <a href="#departmental-positions" class="btn">View Positions</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SUG Executive Positions -->
+                <div class="candidates-container" id="sug-executive">
+                    <h3 class="position-title">SUG Executive Positions</h3>
+                    
+                    <h4 class="sub-position-title">SUG President</h4>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">John Chukwudi</div>
+                                <div class="candidate-department">Political Science</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('John Chukwudi', 'SUG President')">Vote</button>
+                            </div>
+                        </div>
+                        
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Amaka Eze</div>
+                                <div class="candidate-department">Law</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Amaka Eze', 'SUG President')">Vote</button>
+                            </div>
+                        </div>
+                        
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Obinna Okeke</div>
+                                <div class="candidate-department">Medicine</div>
+                                <div class="candidate-level">500 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Obinna Okeke', 'SUG President')">Vote</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sub-position-title">SUG Vice President</h4>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="./images/Delaw.JPG" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">MBAH IFEBUCHE JULIANA</div>
+                                <div class="candidate-department">LAW</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Chioma Nwankwo', 'SUG Vice President')">Vote</button>
+                            </div>
+                        </div>
+                        
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Emeka Okafor</div>
+                                <div class="candidate-department">Computer Science</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Emeka Okafor', 'SUG Vice President')">Vote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Faculty Positions -->
+                <div class="candidates-container" id="faculty-positions">
+                    <h3 class="position-title">Faculty of Environmental Sciences Positions</h3>
+                    
+                    <h4 class="sub-position-title">Faculty President</h4>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Samuel Nwokolo</div>
+                                <div class="candidate-department">Surveying & Geoinformatics</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Samuel Nwokolo', 'Faculty President')">Vote</button>
+                            </div>
+                        </div>
+                        
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Blessing Okoro</div>
+                                <div class="candidate-department">Architecture</div>
+                                <div class="candidate-level">300 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Blessing Okoro', 'Faculty President')">Vote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Departmental Positions -->
+                <div class="candidates-container" id="departmental-positions">
+                    <h3 class="position-title">Department of Surveying & Geoinformatics Positions</h3>
+                    
+                    <h4 class="sub-position-title">Departmental President</h4>
+                    <div class="candidates-grid">
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">David Uche</div>
+                                <div class="candidate-department">Surveying & Geoinformatics</div>
+                                <div class="candidate-level">400 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('David Uche', 'Departmental President')">Vote</button>
+                            </div>
+                        </div>
+                        
+                        <div class="candidate-card">
+                            <div class="candidate-image">
+                                <img src="https://via.placeholder.com/300x200?text=Candidate+Photo" alt="Candidate Photo">
+                            </div>
+                            <div class="candidate-details">
+                                <div class="candidate-name">Grace Okafor</div>
+                                <div class="candidate-department">Surveying & Geoinformatics</div>
+                                <div class="candidate-level">300 Level</div>
+                                <button class="btn vote-btn" onclick="openVoteModal('Grace Okafor', 'Departmental President')">Vote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Vote Confirmation Modal -->
+    <div class="modal" id="voteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirm Your Vote</h3>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="confirmation-text">
+                <p>You are about to vote for <strong id="candidateName"></strong> as <strong id="positionName"></strong>.</p>
+                <p>This action cannot be undone. Are you sure you want to proceed?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+                <button class="btn" onclick="submitVote()">Confirm Vote</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">About ESUT</a>
+            <a href="#">Election Guidelines</a>
+            <a href="#">Contact Support</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 Enugu State University of Science and Technology - Students Union Government. All Rights Reserved.   <img src="./images/logo/logo-footer.png" alt=""></p>
+      
+    </footer>
+    
+    <script>
+        // Modal functions
+        function openVoteModal(candidateName, positionName) {
+            document.getElementById('candidateName').textContent = candidateName;
+            document.getElementById('positionName').textContent = positionName;
+            document.getElementById('voteModal').style.display = 'flex';
+        }
+        
+        function closeModal() {
+            document.getElementById('voteModal').style.display = 'none';
+        }
+        
+        function submitVote() {
+            // In a real implementation, this would send the vote to the server
+            alert('Thank you for voting! Your vote has been recorded.');
+            closeModal();
+        }
+        
+        // Close modal if clicked outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('voteModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

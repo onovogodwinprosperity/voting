@@ -1,0 +1,108 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.university-logo {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.auth-header h1 {
+    color: var(--esut-green);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.auth-card h2 {
+    color: var(--esut-green);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.auth-instruction {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-form {
+    margin-top: 1.5rem;
+}
+
+.otp-input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.otp-digit {
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: var(--border-radius);
+}
+
+.otp-digit:focus {
+    outline: none;
+    border-color: var(--esut-green);
+    box-shadow: 0 0 0 0.2rem rgba(0, 138, 62, 0.25);
+}
+
+.timer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.timer span {
+    font-weight: bold;
+    color: var(--danger-color);
+}
+
+.resend-otp {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.auth-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: var(--gray-dark);
+}
